@@ -1,5 +1,10 @@
 # Changelog
 
+## [Unreleased]
+
+### Fixed
+- **mqtt.sh** — orb summary's stderr banner no longer floods the journal on every poll; stderr is captured per poll and replayed to the log only when orb summary fails (with its exit code) or when mqtt_debug is enabled, so genuine error diagnostics are no longer silently discarded.
+
 ## Orb Sensor Changelog
 Visit https://orb.net/the-forge/changelog#cli for changes in the most recent Orb Sensor releases.
 
